@@ -1,62 +1,76 @@
-*{
+* {
     font-family: fantasy;
     padding: 0px;
 }
-body{
+
+body {
     background-color: #2D851B;
-    background-image: url(imagenes/posiblefondo.png);
+    background-image: url(imagenes/posiblefondo3.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-a:hover{
+
+a:hover {
     color: #FEFB00;
 }
 
 /*--------------------------BARRA DE NAVEGACION--------------------------*/
-.header{
+.header {
     background-color: #3BA427;
     display: flex;
     justify-content: center;
     text-align: center;
+    border: 3px solid rgb(17, 110, 17);
+    border-radius: 10px;
 }
-.barranav{
+
+.barranav {
     padding: 10px;
 }
-.logo{
+
+.logo {
     padding: 25px;
     color: #BDFF00;
-    float: left;
     font-size: 50px;
     text-decoration: none;
-    padding-right: 620px;
+    margin-right: 620px;
 }
-.navopciones{
+
+.navopciones {
     color: #BDFF00;
     text-decoration: none;
-    padding-left:  30px; ;
+    padding-left: 30px;
+    ;
     display: flex;
-    float: right;
-    float: left;
     font-size: 30px;
 }
-.barranav ul{
+
+.barranav ul {
     list-style: none;
 }
+
 /*------------------------------------------------PAGINA DE INICIO------------------------------------------------------*/
 /*texto de bienvenida*/
-.intro-inicio{
+.intro-inicio {
+    border: 2px solid #132f57;
+    border-radius: 10px;
     color: #132f57;
     text-align: center;
     justify-content: center;
     background-color: #5da7d2bc;
     width: 100%;
+    margin-top: 10px;
 
 }
-.intro-inicio h1{
+
+.intro-inicio h1 {
     font-size: 50px;
     text-decoration: underline;
     padding-top: 20px;
     letter-spacing: 2px;
 }
-.intro-inicio p{
+
+.intro-inicio p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -67,26 +81,32 @@ a:hover{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .intro-inicio img {
     padding-bottom: 50px;
 }
 
 /*----------------------------VIDEOS-------------------------------*/
-.intro-videos{
+.intro-videos {
     background-color: #5da7d2bc;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
-    
+    border: 2px solid #132f57;
+    border-radius: 10px;
+
 }
- h1,.intro-videos{
+
+h1,
+.intro-videos {
     font-size: 30px;
     color: #132f57;
     text-decoration: underline;
     padding-top: 5px;
     letter-spacing: 2px;
 }
-.videos-inicio{
+
+.videos-inicio {
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -95,8 +115,10 @@ a:hover{
 /*--------------------------------------------PAGINA DE REGISTRO--------------------------------------------------------*/
 /*----------------------------INPUT DE REGISTRO----------------------------------*/
 .paginaInput {
+    border: 2px solid #132f57;
+    border-radius: 10px;
     color: #132f57;
-    background-color:  #5da7d2bc;
+    background-color: #5da7d2bc;
     text-align: center;
     /* ----------------- */
     margin-right: 350px;
@@ -104,30 +126,46 @@ a:hover{
     margin-top: 100px;
     margin-bottom: 200px;
 }
-.input-registro{
+
+.input-registro {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
 /*---------------------------------CAPTCHA---------------------------------------*/
-.captcha{
+.captcha {
+    border: 2px solid#132f57;
+    border-radius: 10px;
+    border-radius: 10px;
     font-size: 30px;
-    margin: 30px; 
+    margin-right: 100px;
+    margin-left: 100px;
     padding: 10px;
 }
-.muestraResultado{
+
+.muestraResultado {
     font-size: 20px;
     margin: 10px;
 }
+
 /*---------------------------------------------LISTA PERSONAJES--------------------------------------------------------*/
-.tabla-personajes, tr, td{
+.tabla-personajes,
+tr,
+td {
     border: 1px solid black;
+    border-radius: 5px;
     border-collapse: collapse;
     background-color: #4684e28b;
     text-align: center;
     padding: 10px;
-    border-style:ridge;
+    border-style: ridge;
 }
-.table-contenedor{
+
+thead {
+    padding: 10px;
+}
+
+.table-contenedor {
     width: 30%;
     margin-right: 150px;
     margin-top: 110px;
@@ -135,36 +173,44 @@ a:hover{
     margin-left: 450px;
     color: rgb(12, 44, 72);
 }
-.input-agregar{
+
+.input-agregar {
     text-align: center;
     color: #132f57;
-    border: 2px solid #132f57; 
+    border: 2px solid #132f57;
+    border-radius: 10px;
     background-color: #366dbb80;
     margin: 30px;
-    margin-left: 300px; 
+    margin-left: 300px;
     margin-right: 300px;
     padding: 20px;
-    
+
 }
 
 
 /*-------------------------------------------------FOOTER--------------------------------------------------------------*/
-.footerclass{ 
-  font-size: 15px;
-  color: #BDFF00;   
-  background-color: #3BA427;
-  text-align: center;
-  padding: 20px;
+.footerclass {
+    border: 3px solid rgb(17, 110, 17);
+    border-radius: 10px;
+    font-size: 15px;
+    color: #BDFF00;
+    background-color: #3BA427;
+    text-align: center;
+    padding: 20px;
 }
-.textofooter1{
-   font-family:'Times New Roman', Times, serif;
 
+.textofooter1 {
+    font-family: 'Times New Roman', Times, serif;
 }
+
 .listafooter {
     font-size: 15px;
-    font-family:'Times New Roman', Times, serif; 
+    font-family: 'Times New Roman', Times, serif;
 }
-.listafooter, ul, li {
+
+.listafooter,
+ul,
+li {
     text-decoration: none;
     list-style: none;
 }
