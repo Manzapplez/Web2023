@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
-
+ 
+    /*-------------arranca el JS-----------------*/
     "use strict";
 
     document.querySelector("#btnenvio").addEventListener("click", agregarALaTbla)
@@ -7,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-    function agregarALaTbla(){
+    function agregarALaTbla(e){
+        e.preventDefault();
     
     
     }

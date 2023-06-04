@@ -4,7 +4,6 @@
 }
 
 body {
-    background-color: #2D851B;
     background-image: url(imagenes/posiblefondo3.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -18,38 +17,30 @@ a:hover {
 .header {
     background-color: #3BA427;
     display: flex;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
     border: 3px solid rgb(17, 110, 17);
     border-radius: 10px;
+    align-items: center;
 }
-
-.barranav {
-    padding: 10px;
-}
-
 .logo {
     -webkit-text-stroke:2px rgb(17, 110, 17); ;
-    padding: 25px;
+    padding-left: 25px;
     color: rgb(255, 251, 0);
     font-size: 55px;
     text-decoration: none;
-    margin-right: 620px;
+    
 }
-
+.barranav {
+    padding: 10px;
+    list-style: none;
+}
 .navopciones {
     color: #BDFF00;
     text-decoration: none;
     padding-left: 30px;
-    ;
     display: flex;
     font-size: 30px;
 }
-
-.barranav ul {
-    list-style: none;
-}
-
 /*------------------------------------------------PAGINA DE INICIO------------------------------------------------------*/
 /*texto de bienvenida*/
 .intro-inicio {
