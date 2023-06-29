@@ -1,20 +1,36 @@
-document.addEventListener("DOMContentLoaded", function(){
- 
+document.addEventListener("DOMContentLoaded", function () {
+
     /*-------------arranca el JS-----------------*/
     "use strict";
 
-    document.querySelector("#btnenvio").addEventListener("click", agregarALaTbla)
+    document.querySelector("#btnAgregar");
+    let tablaCONTENIDO = document.querySelector(".tbody-tabla");
+
+    let contenidos = [
+        {
+            "nombre": "",
+            "genero": "",
+            "obejtoFav": "",
+            "cumpleaños": "",
+            "direccion": ""
+        }
+    ];
 
 
 
 
-    function agregarALaTbla(e){
-        e.preventDefault();
+
     
-    
-    }
 
-
-
+/*---------------MENU RESPONISVE-----------------*/
+    document.querySelector(".nav-toggle").addEventListener("click", botonHamburguesa); 
+     function botonHamburguesa() {
+        document.querySelector(".navopciones").classList.toggle("navopciones-visible");
+        
+     }
+    document.querySelector(".container").addEventListener("click", function(){
+        document.querySelector(".navopciones").classList.remove("navopciones-visible");
+     })
+   
 });
 

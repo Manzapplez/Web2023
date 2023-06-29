@@ -9,12 +9,31 @@ body {
     background-attachment: fixed;
 }
 
-a:hover {
+.navopciones-items:hover {
+    background-color: #305f27;
     color: #FEFB00;
+    transition: .1s;
+    border:3px solid #FEFB00;
+    padding: 2px;
+}
+a:hover{
+    color: #FEFB00;
+    transition: .5s;
 }
 
+
 /*--------------------------BARRA DE NAVEGACION--------------------------*/
+.nav-toggle {
+    border: none;
+    background: none;
+    font-size: 40px;
+    color: #BDFF00;
+    display: none;
+}
+
 .header {
+    width: 100%;
+    height: 90px;
     background-color: #3BA427;
     display: flex;
     justify-content: space-between;
@@ -22,25 +41,36 @@ a:hover {
     border-radius: 10px;
     align-items: center;
 }
+
 .logo {
-    -webkit-text-stroke:2px rgb(17, 110, 17); ;
+    -webkit-text-stroke: 2px rgb(17, 110, 17);
+    ;
     padding-left: 25px;
     color: rgb(255, 251, 0);
     font-size: 55px;
     text-decoration: none;
-    
+
 }
-.barranav {
+
+.navopciones {
+    border-radius: 8px;
+    margin-left: 30px;
+    display: flex;
+    font-size: 30px;
     padding: 10px;
     list-style: none;
 }
-.navopciones {
+
+.navopciones-items {
     color: #BDFF00;
     text-decoration: none;
-    padding-left: 30px;
-    display: flex;
-    font-size: 30px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #1f47166e;
+    
 }
+
 /*------------------------------------------------PAGINA DE INICIO------------------------------------------------------*/
 /*texto de bienvenida*/
 .intro-inicio {
@@ -66,12 +96,6 @@ a:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 20px;
-    text-align: center;
-    /* ----------------- */
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .intro-inicio img {
@@ -80,6 +104,7 @@ a:hover {
 
 /*----------------------------VIDEOS-------------------------------*/
 .intro-videos {
+    width: 100%;
     background-color: #5da7d2bc;
     text-align: center;
     margin-top: 15px;
@@ -118,7 +143,8 @@ h1,
     margin-top: 100px;
     margin-bottom: 200px;
 }
-.paginaInput img{
+
+.paginaInput img {
     margin-top: 10px;
 }
 
@@ -144,25 +170,31 @@ h1,
 }
 
 /*---------------------------------------------LISTA PERSONAJES--------------------------------------------------------*/
-.tabla-personajes{
-   border: 2px solid #132f57;
-   border-radius: 8px;
-   background-color: #366dbb80;
-   color: #112849;
-   margin: 0 auto;
-   text-align: center;
-   margin-top: 30px;
+.tabla-personajes {
+    border: 2px solid #132f57;
+    border-radius: 8px;
+    background-color: #366dbb80;
+    color: #112849;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
 }
-.tabla-personajes, th{
+
+.tabla-personajes,
+th {
     border: 2px solid #132f57;
     padding: 10px;
     font-size: 18px;
 }
-.tabla-personajes, td{
+
+.tabla-personajes,
+td {
     padding: 10px;
     border: 2px solid #132f57;
 }
-.tabla-personajes, tr{
+
+.tabla-personajes,
+tr {
     padding: 5px;
 }
 
@@ -205,4 +237,117 @@ ul,
 li {
     text-decoration: none;
     list-style: none;
+}
+
+/*----------------------------------------RESPONSIVE-------------------------------------------------------------------*/
+@media screen and (max-width: 750px) {
+
+    /*----------------NAVBAR---------------*/
+    .header {
+        height: 70px;
+    }
+
+    .logo {
+        font-size: 50px;
+    }
+
+    .navopciones {
+        margin-right: 30px;
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
+        background-color: #1d6d0ecb;
+        position: fixed;
+        left: 0;
+        width: 90%;
+        padding: 20px 0;
+        bottom: 100%;
+        transition: bottom 0.3s;
+    }
+
+    .navopciones-items{
+        background-color: #3ca42700; 
+    }
+
+    .navopciones-visible{
+        bottom: 60%;
+    }
+
+    .nav-toggle {
+        margin: 0 10px;
+        display: block;
+    }
+
+    /*-----------------INICIO------------------*/
+    .intro-inicio h1 {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+    .intro-inicio p {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+
+    }
+
+    .intro-inicio img {
+        padding-bottom: 20px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    h1,
+    .intro-videos {
+        font-size: 30px;
+    }
+    
+    .videos-inicio {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    iframe{
+        width:340px; 
+        height: 145px;
+    }
+    /*------------input de registro--------------*/
+    .paginaInput {
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .input-registro {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    /*-------CAPTCHA--------*/
+    .captcha {
+        margin-right: 50px;
+        margin-left: 50px;
+        padding: 10px;
+    }
+    /*---------------TABLA-----------------------*/
+    
+    .tabla-personajes,
+    th {
+        padding: 5px;
+        font-size: 14px;
+    }
+    
+    .tabla-personajes,
+    td {
+        padding: 5px;
+    }
+    
+    .tabla-personajes,
+    tr {
+        padding: 5px;
+    }
+    
+    .input-agregar {
+        margin: 50px 30px;
+    }
+
 }
