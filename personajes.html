@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  
   <!---------------------------------------------------NAVBAR-------------------------------------------------------------->
   <nav class="header">
     </hover> <a href="index.html" class="logo" class="hover">WikiValley</a>
@@ -24,11 +25,12 @@
   <!---------------------------------------------------CONTENIDO------------------------------------------------------------>
   <div class="container">
     <!-----------TABLA--------->
+    
     <table class="tabla-personajes">
+      
       <thead>
         <tr>
           <th> Personaje </th>
-          <th> genero </th>
           <th> objeto favorito </th>
           <th> cumpleaños </th>
           <th> direccion </th>
@@ -37,18 +39,18 @@
       <tbody id="tbody-tabla">
 
       </tbody>
+      
     </table>
+    <button id="btn-borrar-todo">borrar todo</button>
     <!------------AGREGAR FILAS A LA TABLA------------>
     <div class="input-agregar">
-      <img src="imagenes/gallina.png"> <!--hidden chicken-->
+      <img src="imagenes/gallina.png">
       <h2>Agrega los perosnajes que faltan</h2>
-      <input type="text" placeholder="NOMBRE">
-      <input type="text" placeholder="GENERO">
-      <input type="text" placeholder="OBJETO">
-      <input type="text" placeholder="CUMPLEAÑOS">
-      <input type="text" placeholder="DIRECCION">
+      <input class="input-styles" id="NOMBRE" type="text" placeholder="NOMBRE">
+      <input class="input-styles" id="OBJETO" type="text" placeholder="OBJETO">
+      <input class="input-styles" id="CUMPLEAÑOS" type="text" placeholder="CUMPLEAÑOS">
+      <input class="input-styles" id="DIRECCION" type="text" placeholder="DIRECCION">
       <button id="btnAgregar" type="submit">agregar</button>
-      <button id="btnEliminar" type="submit">eliminar todo</button>
       <button id="btnAgregarX3" type="submit">agregar x 3</button>
     </div>
 
@@ -70,5 +72,6 @@
   </div>
 </body>
 <script src="JS/tabla.js"></script>
+<script src="JS/responsive.js"></script>
 
 </html>

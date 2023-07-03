@@ -13,12 +13,21 @@ body {
     background-color: #305f27;
     color: #FEFB00;
     transition: .1s;
-    border:3px solid #FEFB00;
+    border: 3px solid #FEFB00;
     padding: 2px;
 }
-a:hover{
+
+.nav-toggle:hover{
+   background-color: #305f27;
+}
+
+a:hover {
     color: #FEFB00;
     transition: .5s;
+}
+#btn-borrar-todo:hover{
+    color: red;
+    border: 2px solid red;
 }
 
 
@@ -29,6 +38,8 @@ a:hover{
     font-size: 40px;
     color: #BDFF00;
     display: none;
+    padding: 3px;
+    border-radius: 8px;
 }
 
 .header {
@@ -68,7 +79,7 @@ a:hover{
     margin: 20px;
     border-radius: 10px;
     background-color: #1f47166e;
-    
+
 }
 
 /*------------------------------------------------PAGINA DE INICIO------------------------------------------------------*/
@@ -174,21 +185,26 @@ h1,
     border: 2px solid #132f57;
     border-radius: 8px;
     background-color: #366dbb80;
-    color: #112849;
-    margin: 0 auto;
+    margin:auto;
     text-align: center;
     margin-top: 30px;
+    width: 60%;
+}
+.tabla-personajes h2{
+    text-decoration: underline;
 }
 
-.tabla-personajes,
+.tabla-personajes
 th {
+    margin: 0;
+    color: #112849;
     border: 2px solid #132f57;
     padding: 10px;
     font-size: 18px;
 }
 
-.tabla-personajes,
-td {
+.tabla-personajes-items {
+    color: #1d385f;
     padding: 10px;
     border: 2px solid #132f57;
 }
@@ -204,11 +220,45 @@ tr {
     border: 2px solid #132f57;
     border-radius: 10px;
     background-color: #366dbb80;
-    margin: 30px;
+    margin: 40px;
     margin-left: 300px;
     margin-right: 300px;
     padding: 20px;
+}
+.input-styles{
+    font-size: 17px;
+    height: 30px;
+    width: 150px;
+    background-color: #3e6baa5b;
+    border: 2px solid #132f57;;
+    border-radius: 3px;
+    color: white;
+}
+.input-styles::placeholder{
+    color: rgba(255, 255, 255, 0.568);
+}
 
+.btn-eliminar{
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: rgb(238, 64, 64);
+    display: block;
+}
+#btn-borrar-todo{
+    position: absolute;
+    left: 45%;
+    right: 45%;
+    align-items: center;
+    color: rgba(255, 0, 0, 0.781);
+    border: 2px solid rgb(247, 60, 60);
+    font-size: 15px;
+    background-color: #3e6baa5b;
+    padding: 3px;
+    border-radius: 5px;
+    margin-top: 5px;
+    
+    
 }
 
 
@@ -252,11 +302,10 @@ li {
     }
 
     .navopciones {
-        margin-right: 30px;
         flex-direction: column;
         align-items: center;
         font-size: 25px;
-        background-color: #1d6d0ecb;
+        background-color: #1c6d0ee7;
         position: fixed;
         left: 0;
         width: 90%;
@@ -265,11 +314,11 @@ li {
         transition: bottom 0.3s;
     }
 
-    .navopciones-items{
-        background-color: #3ca42700; 
+    .navopciones-items {
+        background-color: #3ca42700;
     }
 
-    .navopciones-visible{
+    .navopciones-visible {
         bottom: 60%;
     }
 
@@ -296,20 +345,22 @@ li {
         width: 300px;
         height: 300px;
     }
-    
+
     h1,
     .intro-videos {
         font-size: 30px;
     }
-    
+
     .videos-inicio {
         padding-left: 20px;
         padding-right: 20px;
     }
-    iframe{
-        width:340px; 
+
+    iframe {
+        width: 340px;
         height: 145px;
     }
+
     /*------------input de registro--------------*/
     .paginaInput {
         margin-right: 50px;
@@ -317,37 +368,38 @@ li {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
     .input-registro {
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    
+
     /*-------CAPTCHA--------*/
     .captcha {
         margin-right: 50px;
         margin-left: 50px;
         padding: 10px;
     }
+
     /*---------------TABLA-----------------------*/
-    
-    .tabla-personajes,
+
+    .tabla-personajes
     th {
         padding: 5px;
-        font-size: 14px;
-    }
-    
-    .tabla-personajes,
-    td {
-        padding: 5px;
+        font-size: 13px;
     }
     
     .tabla-personajes,
     tr {
         padding: 5px;
     }
-    
+
     .input-agregar {
         margin: 50px 30px;
+    }
+    #btn-borrar-todo{
+        left: 43%;
+        right: 43%;
     }
 
 }
