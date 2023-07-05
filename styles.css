@@ -30,6 +30,11 @@ a:hover {
     border: 2px solid red;
 }
 
+.btns-style:hover{
+    border:2px solid blue;
+    color: blue;
+}
+
 
 /*--------------------------BARRA DE NAVEGACION--------------------------*/
 .nav-toggle {
@@ -238,6 +243,16 @@ tr {
     color: rgba(255, 255, 255, 0.568);
 }
 
+.btns-style{
+    border: 2px solid #112849;
+    background-color: #204272b7;
+    height: 30px;
+    color: #112849;
+    font-size: 15px;
+    margin-top: 3px;
+    border-radius: 5px;
+}
+
 .btn-eliminar{
     border: none;
     background: none;
@@ -250,8 +265,8 @@ tr {
     left: 45%;
     right: 45%;
     align-items: center;
-    color: rgba(255, 0, 0, 0.781);
-    border: 2px solid rgb(247, 60, 60);
+    color: rgba(100, 26, 26, 0.781);
+    border: 2px solid rgb(100, 35, 35);
     font-size: 15px;
     background-color: #3e6baa5b;
     padding: 3px;
@@ -275,11 +290,16 @@ tr {
 
 .textofooter1 {
     font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #FEFB00;
+    
 }
 
 .listafooter {
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid #FEFB00;
+    padding-bottom: 10px; ;
 }
 
 .listafooter,
@@ -361,7 +381,7 @@ li {
         height: 145px;
     }
 
-    /*------------input de registro--------------*/
+    /*--------------INPUT DE REGISTRO-----------------*/
     .paginaInput {
         margin-right: 50px;
         margin-left: 50px;

@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let b = numCaptcha[Math.floor(Math.random() * numCaptcha.length)];
     let c = numCaptcha[Math.floor(Math.random() * numCaptcha.length)];
     let d = numCaptcha[Math.floor(Math.random() * numCaptcha.length)];
+    
     let captcha = document.querySelector("#captcha").innerHTML = a + b + c + d;
     
     document.querySelector("#btn-validar").addEventListener("click", function (e) {
